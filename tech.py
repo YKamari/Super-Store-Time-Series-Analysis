@@ -49,7 +49,7 @@ if st.button("Predict"):
     num_of_months
 
     """
-    ## Predicted Order Prices in USD
+    ## Predicted Sales
     """
     st.write(facebook_pred_technology['yhat'])
 
@@ -58,7 +58,7 @@ if st.button("Predict"):
     plt.gca().set_facecolor('lightblue') 
     plt.plot(facebook_pred_technology.index, facebook_pred_technology['yhat'])
     plt.xlabel('Order Date', fontsize=12) 
-    plt.ylabel('Predicted Price in USD', fontsize=12) 
-    plt.title('Forecasted Technology Prices', fontsize=15)
+    plt.ylabel('Predicted Sales', fontsize=12) 
+    plt.title('Forecasted Technology Sales', fontsize=15)
     plt.xticks(rotation=45, ha='right') # Rotate xticks
     st.pyplot(plt)  # Display the plot in Streamlit

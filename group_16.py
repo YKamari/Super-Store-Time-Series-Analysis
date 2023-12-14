@@ -50,7 +50,7 @@ if st.button("predict"):
     num_of_months
 
     """
-    ## Predicted Order Prices in USD
+    ## Predicted Sales 
     """
     facebook_pred1['yhat']
 
@@ -59,7 +59,7 @@ if st.button("predict"):
     plt.gca().set_facecolor('lightpink') 
     plt.plot(facebook_pred1.index, facebook_pred1['yhat'])
     plt.xlabel('Order Date', fontsize=12) 
-    plt.ylabel('Predicted Price in USD', fontsize=12) 
-    plt.title('Forecasted Furniture Prices', fontsize=15)
+    plt.ylabel('Predicted Sales', fontsize=12) 
+    plt.title('Forecasted Furniture Sales', fontsize=15)
     plt.xticks(rotation=45, ha='right') # Rotate xticks
     st.pyplot(plt)  # Display the plot in Streamlit
