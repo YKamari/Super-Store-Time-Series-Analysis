@@ -2,8 +2,6 @@ import streamlit as st
 import joblib
 import pandas as pd
 import matplotlib.pyplot as plt
-from matplotlib import pyplot
-import seaborn as sns
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 
 """
@@ -12,7 +10,7 @@ from statsmodels.tsa.statespace.sarimax import SARIMAX
 
 # Load the best SARIMA model
 with open('best_model_office_supplies.pkl', 'rb') as file:
-    sarima_fit_office_supplies = joblib.load(file)
+    sarima_model = joblib.load(file)
 
 num_of_months = st.number_input('Enter Number of Months Of Sales Prediction')
 
@@ -36,10 +34,10 @@ if st.button("predict"):
     future = pd.DataFrame({'ds': pd.date_range(start=start_date, periods=num_of_months, freq='MS')})
     
     # Generate forecasts
-    sarima_pred = sarima_fit_office_supplies.predict(start=start_date, end=future['ds'].iloc[-1])
+    sarima_pred = sarima_model.get_prediction(start=start_date, end=future['ds'].iloc[-1])
 
-    # Create DataFrame for predicted values
-    sarima_pred_df = pd.DataFrame({'Order Date': sarima_pred.index, 'yhat': sarima_pred.values})
+    # Extract prediction values
+    sarima_pred_df = pd.DataFrame({'Order Date': sarima_pred.predicted_mean.index, 'yhat': sarima_pred.predicted_mean.values})
     
     # Set date column as index
     sarima_pred_df.set_index('Order Date', inplace=True)
