@@ -1,5 +1,6 @@
 
-![Office-Supplies-Return-to-Classrooms-and-Offices-425x250](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/133201112/102967b7-60d3-4c38-acca-2cc20ae911ac)
+![base-supply-office-products-1600x800px](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/133201112/6085c0f2-c6f7-44e0-a634-4f0c1bb38a8c)
+
 
 # Super-Store-Time-Series-Analysis
 
