@@ -1,7 +1,3 @@
-
-![base-supply-office-products-1600x800px](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/133201112/6085c0f2-c6f7-44e0-a634-4f0c1bb38a8c)
-
-
 # Super-Store-Time-Series-Analysis
 ![image](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/118848352/874f45c0-c29b-4829-a94c-1bd47f278a4c)
 
@@ -53,13 +49,14 @@ The time series analysis will particularly emphasize sales data related to furni
 
 ## Project Structure
 1. Exploratory Data Analysis (EDA)
-2. Modeling - ARIMA, SARIMA, Facebook Prophet & LSTM (Long Short - Term Memory)
-3. Model Evaluation
-4. Deployment
+2. Data Preprocessing - Resampling, Testing for Trends, Decomposition, Train-Test Split, Checking for best ARIMA Order
+3. Modelling - ARIMA, SARIMA, Facebook Prophet & LSTM (Long Short - Term Memory)
+4. Model Evaluation - using MAE and RSME
+5. Deployment
 
-5. ## Results
+## Results
 
-6. ### Furniture Sales Forecast
+### Furniture Sales Forecast
 
 ** Furniture Sales  Prediction Using Facebook Prophet**
 ![Furniture Prophet](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/133201112/d9afe5ea-af09-4eb9-9a1f-407a206ed365)
@@ -113,93 +110,23 @@ While the project provided valuable insights into sales trends, profitability, a
 
 Leveraging the time series models effectively can help in better inventory management, targeted marketing, and overall performance improvement. However, continuous refinement and adaptation of strategies are crucial to addressing the unpredictability observed in sales trends.
 
-**Total Sales per Segment**
-![image](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/118848352/fdec14f6-375d-4121-abd0-9fbde4966e7b)
+### Recommendations
+- **Inventory Management**: Optimize stock levels by increasing inventory during peak seasons and reducing it during off-seasons to minimize carrying costs.
+- **Marketing Strategies**: Allocate a budget for promotions and discounts during low periods to attract customers and boost sales.
+- **Product Launches**: Strategically launch new products for the various categories during peak periods to provide customers with a diverse selection.
+- **Supplier Collaboration**: Collaborate closely with suppliers and logistics partners to meet increased demand during peak periods. Negotiate for favorable terms and discounts to reduce overall costs.
 
-**Total Profit per Segment**
-![image](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/118848352/b14b7c84-bc9c-4ff4-ada6-f8388c7f695d)
+### Overall Business Insights
+- **Financial Planning**: Allocate higher budgets for sales and costs during peak periods in financial planning. During low periods, focus on cost reduction strategies.
+- **Operational Efficiency**: Anticipate increased order fulfillment requirements during peak periods by adjusting stock levels and logistics operations.
+- **Staffing**: Plan staffing levels to ensure adequate coverage during high seasons and consider optimizing staff costs by implementing leave rotations during low seasons.
+- Customer Experience: Ensure stock availability and provide excellent service during high seasons by properly covering staffing needs and optimizing the overall customer experience.
 
-**Total Sales by Category**
-![image](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/118848352/39916f45-cea5-49a3-bb67-b50b24cde02c)
-
-**Total Profit by Category**
-![image](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/118848352/6f0db2f5-6977-464e-858f-7f0f57bc328e)
-
-**Total Sales by Sub-Category**
-![image](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/118848352/44716c3f-b9da-43a5-9058-380392478b2b)
-
-**Top 10 Product Sales**
-![image](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/118848352/64ab9826-19b9-4381-aa90-d2304a0e3087)
-
-**Top 10 State by Sales** 
-![image](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/118848352/21e0015e-ba2b-47bb-b9f3-d1f9b4571ad2)
-
-**Methods**
-Resampling
-Testing for trends
-Decomposition
-Train-Test Split
-Checking for best Arima order
-Modeling - ARIMA - Base Model
-          SARIMA
-          Facebook Prophet
-          LSTM
-Model Evaluation - using MAE and RSME
-
-**Furniture best predictor model**
-![image](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/118848352/85019086-9731-436e-9e73-b35b3ef0a7c4)
-Facebook Prophet was the best with MAE: 147.78 and RSME: 194.92
-
-**Next 5 years forecast for furniture using Facebook Prophet Model**
-![image](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/118848352/b782fa33-e384-4efb-a503-cdac1338eb35)
-
-**Office Supplies best predictor model**
-![image](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/118848352/91a26e1c-0039-4120-8ce2-8ea334af2d29)
-SARIMA was the the best with MAE: 206.66 and RSME: 254.93
-
-**Next 5 years forecast for Office Supplies using SARIMA Model**
-![image](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/118848352/11c780c2-1b26-4978-b820-26b95302f32d)
-
-**Technology best predictor model**
-![image](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/118848352/2fb33b39-f70b-4403-8b2d-07331cc51eb6)
-Facebook was the best with MAE: 260.69 and RSME: 347.58
-
-**Next 5 years forecast for Technology using Facebook Prophet Model**
-![image](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/118848352/d8e4b8da-cf08-4dc6-8c58-4c25055a8e82)
-
-**LSTM Model Predictor vs Actual Sales**
-![image](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/118848352/fad38fa3-9a21-4cd4-a428-9b0687921983)
-
-
-**Recommendations**
-- Inventory Management:
-Optimize stock levels by increasing inventory during peak seasons and reducing it during off-seasons to minimize carrying costs.
-- Marketing Strategies:
-Allocate a budget for promotions and discounts during low periods to attract customers and boost sales.
-- Product Launches:
-Strategically launch new products for the various categories during peak periods to provide customers with a diverse selection.
-- Supplier Collaboration:
-Collaborate closely with suppliers and logistics partners to meet increased demand during peak periods. Negotiate for favorable terms and discounts to reduce overall costs.
-
-**Overall Business Insights**
-- Financial Planning:
-Allocate higher budgets for sales and costs during peak periods in financial planning. During low periods, focus on cost reduction strategies.
-- Operational Efficiency:
-Anticipate increased order fulfillment requirements during peak periods by adjusting stock levels and logistics operations.
-- Staffing:
-Plan staffing levels to ensure adequate coverage during high seasons and consider optimizing staff costs by implementing leave rotations during low seasons.
-- Customer Experience:
-Ensure stock availability and provide excellent service during high seasons by properly covering staffing needs and optimizing the overall customer experience.
-
-**Limitations**
-- Assumption of Stationarity: 
-Time series models often assume stationarity in data, which might not hold true in real-world scenarios, leading to challenges in model application and accuracy.
-Seasonal Variations:
-- Unforeseen changes in consumer behavior, market trends, or external factors (e.g., economic changes, seasonal fluctuations) might impact sales differently than historical data suggests, affecting the accuracy of forecasts.
-- Changing Consumer Behavior:
-Behavioral changes in consumers over time might not be captured entirely by historical data, potentially leading to shifts in purchasing patterns that the models may not anticipate accurately.
-- Promotions: 
-The models do not factor in the effect of promotions in driving sales particularly duiring the holiday seasons.
+### Limitations
+- **Assumption of Stationarity**: Time series models often assume stationarity in data, which might not hold true in real-world scenarios, leading to challenges in model application and accuracy.
+- **Seasonal Variations**: Unforeseen changes in consumer behavior, market trends, or external factors (e.g., economic changes, seasonal fluctuations) might impact sales differently than historical data suggests, affecting the accuracy of forecasts.
+- **Changing Consumer Behavior**: Behavioral changes in consumers over time might not be captured entirely by historical data, potentially leading to shifts in purchasing patterns that the models may not anticipate accurately.
+- **Promotions**: The models do not factor in the effect of promotions in driving sales particularly duiring the holiday seasons.
 
 
 
