@@ -58,12 +58,12 @@ The time series analysis will particularly emphasize sales data related to furni
 
 ### Furniture Sales Forecast
 
-** Furniture Sales  Prediction Using Facebook Prophet**
+**Furniture Sales  Prediction Using Facebook Prophet**
 ![Furniture Prophet](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/133201112/d9afe5ea-af09-4eb9-9a1f-407a206ed365)
 
 The Facebook Prophet model showcases superior performance compared to the ARIMA, SARIMA and LSTM models. The Facebook Prophet model achieves a notably lower Mean Absolute Error (MAE) of 147.78, indicating better accuracy in point predictions than ARIMA (MAE: 289.54), SARIMA (MAE: 187.30) and LSTM (MAE: 281.59). Similarly, in terms of Root Mean Squared Error (RMSE), the Facebook Prophet model outperforms ARIMA, SARIMA and LSTM with an RMSE of 194.92, signifying its ability to make more precise predictions compared to the other models (ARIMA RMSE: 337.94, SARIMA RMSE: 239.38, LSTM RMSE: 328.61).
 
-** 5 Year Furniture Sales Prediction Using Facebook Prophet**
+**5 Year Furniture Sales Prediction Using Facebook Prophet**
 ![Furniture 5 year](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/133201112/9eae8714-2a31-44d1-b9a8-e930c585f8f1)
 
 The sales data reveals a recurring trend where sales hit their lowest points in January and February, gradually rising thereafter. Consistently, the highest sales occur in October, November, and December. Moreover, a significant decline in sales occurs around April and mid-year in June.
@@ -72,12 +72,12 @@ The forecast accurately mirrors this seasonal pattern, capturing the trend of lo
 
 ## Office Supplies Sales Forecast
 
-** Office Supplies Sales Prediction Using SARIMA**
+**Office Supplies Sales Prediction Using SARIMA**
 ![Office Supplies SARIMA](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/133201112/8fc5a377-e7d0-470f-b9f2-418e1489fea7)
 
 The SARIMA model performs better than both the ARIMA and Facebook Prophet models, as reflected in its lower Mean Absolute Error (MAE) of 206.66 and Root Mean Squared Error (RMSE) of 254.93. The SARIMA model outperforms the ARIMA model, indicating improved accuracy in point predictions and a better fit to the actual data. However, when compared to the LSTM model, SARIMA exhibits higher a higher MAE (LSTM MAE: 194.259) but still lower RMSE.
 
-** 5 Year Office Supplies Sales Prediction Using SARIMA**
+**5 Year Office Supplies Sales Prediction Using SARIMA**
 ![Office Supplies 5 year](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/133201112/57dec617-0f42-4c4d-8f90-d22402a227c9)
 
 The sales data displays a recurrent pattern, consistently hitting its lowest points at the start of each year, notably in January and February, and gradually increasing afterward. The peak sales regularly occur towards the year's conclusion, specifically in October, November, and December. Additionally, noticeable decreases in sales are evident around April and mid-year in June.
@@ -89,12 +89,12 @@ Looking ahead in the forecast, a distinct upward trajectory in sales is anticipa
 
 ### Technology Sales Forecast
 
-** Technology Sales Prediction Using Facebook Prophet**
+**Technology Sales Prediction Using Facebook Prophet**
 ![Technology Prophet](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/133201112/191a3486-f496-4fe3-b4a5-bb2421e465e3)
 
 The Facebook Prophet model displays superior predictive accuracy in technology product sales compared to traditional time series models like ARIMA and SARIMA. With the lowest Mean Absolute Error (MAE) of 260.69, Prophet's predictions closely align with actual values, outperforming both ARIMA (290.73) and SARIMA (289.75). Moreover, Prophet exhibits the smallest Root Mean Squared Error (RMSE) at 347.58, indicating more consistently accurate forecasts compared to ARIMA (401.75) and SARIMA (358.01). These results highlight Prophet's efficiency and reliability in predicting technology sales, establishing its superiority over conventional models.
 
-** 5 Year Furniture Sales Prediction Using Facebook Prophet**
+**5 Year Furniture Sales Prediction Using Facebook Prophet**
 ![Technology 5 year](https://github.com/YKamari/Super-Store-Time-Series-Analysis/assets/133201112/1611808b-0a7c-4429-b09f-edb8f56c3057)
 
 The sales data reveals a cyclic pattern, reaching its lowest levels at the start of the year, notably in January and February, then gradually rising. Consistently, peak sales occur towards the year's conclusion, particularly in October, November, and December. Additionally, there is a noticeable decline in sales around April and in June during the middle of the year.
