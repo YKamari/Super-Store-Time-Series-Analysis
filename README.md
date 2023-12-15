@@ -103,6 +103,10 @@ The forecast effectively mirrors this inherent seasonality, precisely reflecting
 
 In the forecast, there isn't a significant anticipated alteration in sales over the upcoming five years.
 
+## Model Deployment 
+
+The deployed model can accessed and tested here https://super-store-time-series-analysis-kznx7wfjjbw6qyjtjmbxsj.streamlit.app/
+
 ## Summary 
 The forecasting models (ARIMA, SARIMA, Facebook Prophet, LSTM) showcase varying performances across categories, emphasizing the need for tailored model selection based on the product segment. 
 
